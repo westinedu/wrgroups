@@ -3,8 +3,8 @@ from bookmarks.views import *
 
 handler500 = 'djangotoolbox.errorviews.server_error'
 
-urlpatterns = patterns('',
-    (r'^$', main_page),
+urlpatterns = patterns('',    
+    (r'^$', fb),
     ('^_ah/warmup$', 'djangoappengine.views.warmup'),
     ('^$', 'django.views.generic.simple.direct_to_template',
      {'template': 'home.html'}),
