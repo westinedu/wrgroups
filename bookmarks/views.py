@@ -3,6 +3,8 @@ from django.http import HttpResponse,HttpResponseRedirect
 from django.utils.importlib import import_module
 from django.template import Context
 from django.template.loader import get_template
+from django.shortcuts import get_object_or_404, render_to_response
+from django.views.generic.simple import direct_to_template
 
 def main_page(request):
 	template = get_template('main_page.html')
@@ -20,6 +22,6 @@ def fb(request):
 #	except:
 #		raise Http404('Requested user not found.')
 #	bookmarks = user.bookmark_set.all()
-
-
-	return HttpResponseRedirect('templates/registration/blank.html')
+  
+	#return render_to_response('registration/blank.html')
+    return direct_to_template(request, 'registration/blank.html')
