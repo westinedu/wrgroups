@@ -24,7 +24,7 @@ def fb(request):
 #	bookmarks = user.bookmark_set.all()
   
 	#return render_to_response('registration/blank.html')
-    return direct_to_template(request, 'images/logo.png')
+    return direct_to_template(request, 'registration/fblogin.html')
 
 def image(request):
     image_data = open("static/images/logo.png", "rb").read()
