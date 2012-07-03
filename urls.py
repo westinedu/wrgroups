@@ -4,7 +4,7 @@ from bookmarks.views import *
 handler500 = 'djangotoolbox.errorviews.server_error'
 
 urlpatterns = patterns('',    
-    (r'^$', fb),
+    (r'^$', html5),
     ('^_ah/warmup$', 'djangoappengine.views.warmup'),
     ('^$', 'django.views.generic.simple.direct_to_template',
      {'template': 'home.html'}),
