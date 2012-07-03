@@ -12,7 +12,7 @@ urlpatterns = patterns('',
     ('^_ah/warmup$', 'djangoappengine.views.warmup'),
     ('^$', 'django.views.generic.simple.direct_to_template',
      {'template': 'home.html'}),
-    ('^evertodo$', 'django.views.generic.simple.direct_to_template',
-     {'template': 'html5example.html'}),
+    ('^evertodo$', 'django.views.generic.simple.redirect_to',
+     {'url': '/evertodo/'}),
 )
 
