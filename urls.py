@@ -7,7 +7,7 @@ handler500 = 'djangotoolbox.errorviews.server_error'
 
 urlpatterns = patterns('',    
     (r'^$', fb),
-    (r'^admin/(.*)', include(admin.site.urls)),
+    (r'^admin/', include(admin.site.urls)),
  #   (r'^accounts/', include('registration.backends.default.urls')),
     (r'image', image),
     (r'html5', html5),
