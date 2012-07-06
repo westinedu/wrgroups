@@ -30,11 +30,14 @@
 <path>${GOOGLE_APP_ENGINE}/lib/webapp2</path>
 <path>${GOOGLE_APP_ENGINE}/lib/webob_1_1_1</path>
 <path>${GOOGLE_APP_ENGINE}/lib/yaml/lib</path>
+<path>C:\Python27\Lib\site-packages\Django-1.4-py2.7.egg-info</path>
 </pydev_pathproperty>
 <pydev_variables_property name="org.python.pydev.PROJECT_VARIABLE_SUBSTITUTION">
 <key>GOOGLE_APP_ENGINE</key>
 <value>C:\Program Files (x86)\Google\google_appengine</value>
 <key>DJANGO_MANAGE_LOCATION</key>
 <value>manage.py</value>
+<key>DJANGO_SETTINGS_MODULE</key>
+<value>wrgroups.settings</value>
 </pydev_variables_property>
 </pydev_project>

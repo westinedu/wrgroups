@@ -31,4 +31,4 @@ def image(request):
     return HttpResponse(image_data,mimetype="image/png")
 
 def html5(request):
-    return render_to_response('registration/blank.html')
+    return render_to_response('html5/html5example.html')
