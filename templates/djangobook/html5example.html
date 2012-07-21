@@ -81,11 +81,9 @@ placeholder="Search..."
 type="text"
 id="name"
 />
-
-<script type="text/javascript">
-    var infolink_pid = 1054805;
-    var infolink_wsid = 0;
-</script>
-<script type="text/javascript" src="http://resources.infolinks.com/js/infolinks_main.js"></script>
+sessionStorage.setItem("username",
+document.getElementById
+("name").value)
+alert(sessionStorage.getItem("username"))
 </body>
 </html>
